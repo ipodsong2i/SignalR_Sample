@@ -1,4 +1,4 @@
-##SignalR
+# SignalR
 SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 오픈 소스 라이브러리입니다. 실시간 웹 기능을 사용하면 서버측 코드에서 클라이언트에 콘텐츠를 **즉시 푸시**할 수 있습니다.
 
 * #### SignalR의 기능은 다음과 같습니다.
@@ -40,7 +40,7 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
 
 
 ---------------------------------------
-##Redis Backplane
+# Redis Backplane
 * #### Scale-Out
     - SignalR을 사용하는 앱은 모든 연결을 추적, 관리 해야하는데 이것은 서버 관리 측면에서 문제를 발생시킵니다.
     - 만약 서버가 하나 추가된다면 다른 서버에 있는 앱은 서버의 추가를 인식하지 못하고 해당 서버에 연결 된 클라이언트만과 통신 할 수 있습니다.
@@ -68,9 +68,9 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
     </p>
 
 ---------------------------------------
-## 구현
+# 구현
 
-* #### Redis 설치
+* ### Redis 설치
     - 설치환경
         ```
         OS: Ubuntu 20.04
@@ -97,7 +97,7 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
             # sudo service redis-server restart
             ```
 
-* #### SignalR Server
+* ### SignalR Server
     - 프로젝트 정보
         ```
         Platform: .NET Core 5.0
@@ -153,7 +153,7 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
             });
         ```
 
-* #### SignalR Client
+* ### SignalR Client
     - 프로젝트 정보
         ```
         Platform: .NET Core 5.0
@@ -217,12 +217,15 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
             }
         }
         ```
-* #### 실행
+* ### 실행
     - 주소(Port 번호)가 다른 두 서버를 켜고 클라이언트들을 각각의 서버에 연결 후 테스트
         <p align="center" style="color:gray">
             <img src="./img/testHub.png" style="padding: 0;margin:0;">
         </p>
         정상적으로 데이터가 전송 되는 것을 확인할 수 있었습니다. 
+
+## [샘플 코드](https://github.com/ipodsong2i/SignalR_Sample/)
+
 ##### 참조
 - SignalR : https://docs.microsoft.com/ko-kr/aspnet/core/signalr
 - redis 설치: https://redis.io/docs/getting-started/
