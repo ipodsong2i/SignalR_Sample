@@ -108,6 +108,7 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
         버전: 5.0.17
         ```
     - 서비스 등록 
+        
         ```Startup.cs```
         ```
         public void ConfigureServices(IServiceCollection services)
@@ -133,6 +134,7 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
         ###### 추가 옵션은 ([StackExchange 공식문서](https://stackexchange.github.io/StackExchange.Redis/Configuration.html))에서 확인 가능합니다.
     
     - 허브 생성
+
         ```TestHub.cs```
         ```
         public class TestHub : Hub
@@ -145,6 +147,7 @@ SignalR은 앱에 실시간 웹 기능을 추가하는 것을 간소화하는 �
         }
         ```
     - 허브 등록
+        
         ```Startup.cs```
         ```
         app.UseEndpoints(endpoints =>
